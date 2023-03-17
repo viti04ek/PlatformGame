@@ -10,6 +10,8 @@ public class PlayerMove : MonoBehaviour
     public float Friction;
     public bool Grounded;
 
+    public float MaxSpeed;
+
 
     void Update()
     {
@@ -20,9 +22,18 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Rigidbody.AddForce(Input.GetAxis("Horizontal") * MoveSpeed, 0, 0, ForceMode.VelocityChange);
+        float speedMultiplier = 1;
 
-        Rigidbody.AddForce(-Rigidbody.velocity.x * Friction, 0, 0, ForceMode.VelocityChange);
+        if (!Grounded)
+            speedMultiplier = 0.2f;
+
+        if ( (Rigidbody.velocity.x > MaxSpeed && Input.GetAxis("Horizontal") > 0) || (Rigidbody.velocity.x < -MaxSpeed && Input.GetAxis("Horizontal") < 0) )
+            speedMultiplier = 0;
+
+        Rigidbody.AddForce(Input.GetAxis("Horizontal") * MoveSpeed * speedMultiplier, 0, 0, ForceMode.VelocityChange);
+
+        if (Grounded)
+            Rigidbody.AddForce(-Rigidbody.velocity.x * Friction, 0, 0, ForceMode.VelocityChange);
     }
 
 
@@ -30,7 +41,7 @@ public class PlayerMove : MonoBehaviour
     {
         float angle = Vector3.Angle(collision.contacts[0].normal, Vector3.up);
 
-        if(angle < 45)
+        if (angle < 45)
             Grounded = true;
     }
 

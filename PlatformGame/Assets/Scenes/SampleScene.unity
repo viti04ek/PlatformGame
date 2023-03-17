@@ -506,6 +506,7 @@ GameObject:
   - component: {fileID: 1180722566}
   - component: {fileID: 1180722565}
   - component: {fileID: 1180722564}
+  - component: {fileID: 1180722567}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -527,9 +528,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 1180722565}
   MoveSpeed: 2.5
-  JumpSpeed: 8
+  JumpSpeed: 14
   Friction: 0.6
   Grounded: 0
+  MaxSpeed: 5
 --- !u!54 &1180722565
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -543,7 +545,7 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!4 &1180722566
@@ -562,6 +564,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!75 &1180722567
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180722563}
+  m_Enabled: 1
+  m_Force: {x: 0, y: -10, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1433210130
 GameObject:
   m_ObjectHideFlags: 0
