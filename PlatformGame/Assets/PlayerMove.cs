@@ -13,12 +13,29 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space) && Grounded)
+            Rigidbody.AddForce(0, JumpSpeed, 0, ForceMode.VelocityChange);
     }
 
 
     private void FixedUpdate()
     {
-        Rigidbody.AddForce(Input.GetAxis("Horizontal") * MoveSpeed, 0, 0, ForceMode.Acceleration);
+        Rigidbody.AddForce(Input.GetAxis("Horizontal") * MoveSpeed, 0, 0, ForceMode.VelocityChange);
+
+        Rigidbody.AddForce(-Rigidbody.velocity.x * Friction, 0, 0, ForceMode.VelocityChange);
+    }
+
+
+    private void OnCollisionStay(Collision collision)
+    {
+        float angle = Vector3.Angle(collision.contacts[0].normal, Vector3.up);
+
+        if(angle < 45)
+            Grounded = true;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Grounded = false;
     }
 }
