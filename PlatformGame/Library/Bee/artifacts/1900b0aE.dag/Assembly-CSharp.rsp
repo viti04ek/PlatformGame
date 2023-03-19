@@ -349,7 +349,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Follow.cs"
 "Assets/Head.cs"
+"Assets/Hit & Slashes Vol.1/Demo Scene/ButtonAnimation.cs"
+"Assets/Hit & Slashes Vol.1/Demo Scene/GameManager.cs"
+"Assets/Hit & Slashes Vol.1/SelfDestruct.cs"
 "Assets/PlayerMove.cs"
+"Assets/Pointer.cs"
 -langversion:9.0
 
 /deterministic
