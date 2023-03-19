@@ -14,6 +14,9 @@ public class PlayerMove : MonoBehaviour
 
     public Transform ColliderTransform;
 
+    public Transform BodyTransform;
+    public Transform Target;
+
 
     void Update()
     {
@@ -40,6 +43,12 @@ public class PlayerMove : MonoBehaviour
 
 
         Rigidbody.AddForce(Input.GetAxis("Horizontal") * MoveSpeed * speedMultiplier, 0, 0, ForceMode.VelocityChange);
+
+
+        if (Target.position.x > BodyTransform.position.x)
+            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, -45, 0), 0.5f);
+        else
+            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, 45, 0), 0.5f);
 
 
         if (Grounded)
