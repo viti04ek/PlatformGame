@@ -8,7 +8,7 @@ public class Pointer : MonoBehaviour
     public Camera PlayerCamera;
 
 
-    void Update()
+    void LateUpdate()
     {
         Ray ray = PlayerCamera.ScreenPointToRay(Input.mousePosition);
 

@@ -28,6 +28,12 @@ public class PlayerMove : MonoBehaviour
             ColliderTransform.localScale = Vector3.Lerp(ColliderTransform.localScale, new Vector3(1, 0.5f, 1), Time.deltaTime * 15);
         else
             ColliderTransform.localScale = Vector3.Lerp(ColliderTransform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 15);
+
+
+        if (Target.position.x > BodyTransform.position.x)
+            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, -45, 0), 0.5f);
+        else
+            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, 45, 0), 0.5f);
     }
 
 
@@ -36,19 +42,15 @@ public class PlayerMove : MonoBehaviour
         float speedMultiplier = 1;
 
         if (!Grounded)
+        {
             speedMultiplier = 0.2f;
 
-        if ( (Rigidbody.velocity.x > MaxSpeed && Input.GetAxis("Horizontal") > 0) || (Rigidbody.velocity.x < -MaxSpeed && Input.GetAxis("Horizontal") < 0) )
-            speedMultiplier = 0;
+            if ((Rigidbody.velocity.x > MaxSpeed && Input.GetAxis("Horizontal") > 0) || (Rigidbody.velocity.x < -MaxSpeed && Input.GetAxis("Horizontal") < 0))
+                speedMultiplier = 0;
+        }
 
 
         Rigidbody.AddForce(Input.GetAxis("Horizontal") * MoveSpeed * speedMultiplier, 0, 0, ForceMode.VelocityChange);
-
-
-        if (Target.position.x > BodyTransform.position.x)
-            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, -45, 0), 0.5f);
-        else
-            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, 45, 0), 0.5f);
 
 
         if (Grounded)

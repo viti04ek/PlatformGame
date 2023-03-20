@@ -829,7 +829,6 @@ GameObject:
   - component: {fileID: 1174836065}
   - component: {fileID: 1174836069}
   - component: {fileID: 1174836068}
-  - component: {fileID: 1174836067}
   - component: {fileID: 1174836066}
   m_Layer: 0
   m_Name: Head
@@ -868,19 +867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 1062338039}
---- !u!135 &1174836067
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174836064}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1174836068
 MeshRenderer:
   m_ObjectHideFlags: 0
