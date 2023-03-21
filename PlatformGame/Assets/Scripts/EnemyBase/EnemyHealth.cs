@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
     public int Health;
+
+    public UnityEvent EventOnTakeDamage;
 
 
     public void TakeDamage(int damageValue)
@@ -13,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
 
         if (Health <= 0)
             Die();
+
+        EventOnTakeDamage.Invoke();
     }
 
 
