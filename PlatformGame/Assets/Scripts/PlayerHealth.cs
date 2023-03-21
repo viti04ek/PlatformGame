@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     public HealthUI HealthUI;
 
     public DamageScreen DamageScreen;
+    public Blink Blink;
 
 
     private void Start()
@@ -45,6 +46,8 @@ public class PlayerHealth : MonoBehaviour
             HealthUI.DisplayHealth(Health);
 
             DamageScreen.StartEffect();
+
+            Blink.StartBlink();
         }
     }
 

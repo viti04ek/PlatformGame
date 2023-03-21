@@ -351,6 +351,7 @@
 "Assets/Hit & Slashes Vol.1/Demo Scene/GameManager.cs"
 "Assets/Hit & Slashes Vol.1/SelfDestruct.cs"
 "Assets/Loot/LootHeal.cs"
+"Assets/Scripts/Blink.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/DamageScreen.cs"
 "Assets/Scripts/EnemyBase/EnemyHealth.cs"
