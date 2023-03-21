@@ -358,6 +358,7 @@
 "Assets/Scripts/Follow.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/Head.cs"
+"Assets/Scripts/HealthUI.cs"
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Pointer.cs"
