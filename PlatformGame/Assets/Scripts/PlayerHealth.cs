@@ -14,6 +14,8 @@ public class PlayerHealth : MonoBehaviour
 
     public HealthUI HealthUI;
 
+    public DamageScreen DamageScreen;
+
 
     private void Start()
     {
@@ -41,6 +43,8 @@ public class PlayerHealth : MonoBehaviour
             TakeDamageSound.Play();
 
             HealthUI.DisplayHealth(Health);
+
+            DamageScreen.StartEffect();
         }
     }
 

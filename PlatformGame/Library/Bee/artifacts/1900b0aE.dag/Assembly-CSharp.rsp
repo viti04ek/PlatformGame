@@ -352,6 +352,7 @@
 "Assets/Hit & Slashes Vol.1/SelfDestruct.cs"
 "Assets/Loot/LootHeal.cs"
 "Assets/Scripts/Bullet.cs"
+"Assets/Scripts/DamageScreen.cs"
 "Assets/Scripts/EnemyBase/EnemyHealth.cs"
 "Assets/Scripts/EnemyBase/MakeDamageOnCollision.cs"
 "Assets/Scripts/EnemyBase/TakeDamageOnCollosion.cs"
