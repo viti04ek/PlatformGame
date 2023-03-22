@@ -354,6 +354,7 @@
 "Assets/Scripts/Blink.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/Carrot.cs"
+"Assets/Scripts/CarrotCreator.cs"
 "Assets/Scripts/DamageScreen.cs"
 "Assets/Scripts/EnemyBase/EnemyHealth.cs"
 "Assets/Scripts/EnemyBase/MakeDamageOnCollision.cs"
@@ -366,6 +367,7 @@
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Pointer.cs"
+"Assets/Scripts/Rabbit.cs"
 "Assets/Scripts/Rotate.cs"
 -langversion:9.0
 
