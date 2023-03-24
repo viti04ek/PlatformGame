@@ -371,6 +371,7 @@
 "Assets/Scripts/Pointer.cs"
 "Assets/Scripts/Rabbit.cs"
 "Assets/Scripts/Rotate.cs"
+"Assets/Scripts/RotateToPlayer.cs"
 -langversion:9.0
 
 /deterministic
