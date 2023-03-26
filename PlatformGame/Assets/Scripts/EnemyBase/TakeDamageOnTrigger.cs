@@ -14,7 +14,7 @@ public class TakeDamageOnTrigger : MonoBehaviour
         if (other.attachedRigidbody && other.attachedRigidbody.GetComponent<Bullet>())
             EnemyHealth.TakeDamage(1);
 
-        if (DieOnAnyCollision)
+        if (DieOnAnyCollision && !other.isTrigger)
             EnemyHealth.TakeDamage(10000);
     }
 }
