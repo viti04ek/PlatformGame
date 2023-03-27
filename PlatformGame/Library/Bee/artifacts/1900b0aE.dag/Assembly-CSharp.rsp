@@ -352,6 +352,7 @@
 "Assets/Hit & Slashes Vol.1/SelfDestruct.cs"
 "Assets/Loot/LootHeal.cs"
 "Assets/Scripts/Acorn.cs"
+"Assets/Scripts/BatchPrefabCreator.cs"
 "Assets/Scripts/Blink.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/Carrot.cs"
