@@ -124,8 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0a778a125af0b4abc02b76ff813792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackPeriod: 7
+  Period: 7
   Animator: {fileID: 6503345145411747684}
+  TriggerName: Attack
 --- !u!114 &6503345146051955175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b9934c8ac0102340bafb72171c83fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarrotPefab: {fileID: 5010913398993396013, guid: 8cd9dc36073bb444ea5a43ccb7aee293, type: 3}
+  Pefab: {fileID: 5010913398993396013, guid: 8cd9dc36073bb444ea5a43ccb7aee293, type: 3}
   Spawn: {fileID: 6503345146135607792}
 --- !u!4 &6758280750940115812 stripped
 Transform:
