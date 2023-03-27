@@ -8,7 +8,7 @@ public class BatchPrefabCreator : MonoBehaviour
     public Transform[] Spawns;
 
 
-    void Create()
+    public void Create()
     {
         for (int i = 0; i < Spawns.Length; i++)
         {

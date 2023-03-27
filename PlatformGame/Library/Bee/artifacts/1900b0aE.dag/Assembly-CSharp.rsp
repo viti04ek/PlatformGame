@@ -362,6 +362,7 @@
 "Assets/Scripts/EnemyBase/MakeDamageOnTrigger.cs"
 "Assets/Scripts/EnemyBase/TakeDamageOnCollosion.cs"
 "Assets/Scripts/EnemyBase/TakeDamageOnTrigger.cs"
+"Assets/Scripts/EventsArray.cs"
 "Assets/Scripts/Follow.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/Head.cs"
