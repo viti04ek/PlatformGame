@@ -25,5 +25,8 @@ public class Rocket : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(toPlayer, Vector3.forward);
 
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * RotationSpeed);
+
+
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 }
