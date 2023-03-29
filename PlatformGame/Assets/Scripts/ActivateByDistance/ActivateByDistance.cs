@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class ActivateByDistance : MonoBehaviour
 {
@@ -51,9 +54,11 @@ public class ActivateByDistance : MonoBehaviour
     }
 
 
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.gray;
         Handles.DrawWireDisc(transform.position, Vector3.forward, DistanceToActivate);
     }
+#endif
 }
