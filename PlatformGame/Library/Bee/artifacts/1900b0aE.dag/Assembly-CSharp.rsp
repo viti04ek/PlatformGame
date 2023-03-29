@@ -352,6 +352,8 @@
 "Assets/Hit & Slashes Vol.1/SelfDestruct.cs"
 "Assets/Loot/LootHeal.cs"
 "Assets/Scripts/Acorn.cs"
+"Assets/Scripts/ActivateByDistance/ActivateByDistance.cs"
+"Assets/Scripts/ActivateByDistance/Activator.cs"
 "Assets/Scripts/BatchPrefabCreator.cs"
 "Assets/Scripts/Blink.cs"
 "Assets/Scripts/Bullet.cs"
