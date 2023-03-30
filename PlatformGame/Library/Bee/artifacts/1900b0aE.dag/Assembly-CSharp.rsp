@@ -352,6 +352,7 @@
 "Assets/Hit & Slashes Vol.1/Demo Scene/GameManager.cs"
 "Assets/Hit & Slashes Vol.1/SelfDestruct.cs"
 "Assets/Loot/LootHeal.cs"
+"Assets/Menu/Menu.cs"
 "Assets/Scripts/Acorn.cs"
 "Assets/Scripts/ActivateByDistance/ActivateByDistance.cs"
 "Assets/Scripts/ActivateByDistance/Activator.cs"
@@ -386,6 +387,7 @@
 "Assets/Scripts/RotateToPlayer.cs"
 "Assets/Scripts/RotateToTargetEuler.cs"
 "Assets/Scripts/SetTriggerEveryNSeconds.cs"
+"Assets/Scripts/SoundManager.cs"
 "Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/Walker.cs"
 -langversion:9.0
