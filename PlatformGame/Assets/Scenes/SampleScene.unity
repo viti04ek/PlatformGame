@@ -931,7 +931,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 492781741}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72d9d54655011194bb9359d8fa8a8e74, type: 3}
+  m_Script: {fileID: 11500000, guid: 474ec4816e3879547b0861227ce21c2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 8157818464025967204, guid: f86a3c38e40a89346b477a7003fe7607, type: 3}
@@ -940,6 +940,8 @@ MonoBehaviour:
   ShotPeriod: 0.12
   ShotSound: {fileID: 1949917514}
   Flash: {fileID: 1233520510}
+  NumberOfBullets: 0
+  BulletsText: {fileID: 0}
 --- !u!1001 &499431200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2908,11 +2910,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1919881062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72d9d54655011194bb9359d8fa8a8e74, type: 3}
+  m_Script: {fileID: 11500000, guid: fd0b4232b1a709f4a82e5e37dde20055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 8157818464025967204, guid: f86a3c38e40a89346b477a7003fe7607, type: 3}
-  Spawn: {fileID: 604614851}
+  Spawn: {fileID: 2090911439}
   BulletSpeed: 18
   ShotPeriod: 0.3
   ShotSound: {fileID: 1282761534}
