@@ -385,6 +385,7 @@
 "Assets/Scripts/RotateToPlayer.cs"
 "Assets/Scripts/RotateToTargetEuler.cs"
 "Assets/Scripts/SetTriggerEveryNSeconds.cs"
+"Assets/Scripts/TimeManager.cs"
 "Assets/Scripts/Walker.cs"
 -langversion:9.0
 

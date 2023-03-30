@@ -18,7 +18,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        _timer += Time.deltaTime;
+        _timer += Time.unscaledDeltaTime;
 
         if (_timer > ShotPeriod && Input.GetMouseButton(0))
         {
