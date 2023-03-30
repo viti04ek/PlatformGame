@@ -44,4 +44,14 @@ public class Automat : Gun
     {
         BulletsText.text = $"Bullets: {NumberOfBullets}";
     }
+
+
+    public override void AddBullets(int numberOfBullets)
+    {
+        NumberOfBullets += numberOfBullets;
+
+        UpdateText();
+
+        PlayerArmory.TakeGunByIndex(1);
+    }
 }

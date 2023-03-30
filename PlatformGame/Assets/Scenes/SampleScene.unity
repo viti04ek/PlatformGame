@@ -940,7 +940,7 @@ MonoBehaviour:
   ShotPeriod: 0.12
   ShotSound: {fileID: 1949917514}
   Flash: {fileID: 1233520510}
-  NumberOfBullets: 30
+  NumberOfBullets: 0
   BulletsText: {fileID: 1897486863}
   PlayerArmory: {fileID: 1180722570}
 --- !u!1001 &499431200
@@ -1912,7 +1912,7 @@ MonoBehaviour:
   Guns:
   - {fileID: 1919881064}
   - {fileID: 492781743}
-  CurrentGunIndex: 1
+  CurrentGunIndex: 0
 --- !u!1 &1199201403
 GameObject:
   m_ObjectHideFlags: 0

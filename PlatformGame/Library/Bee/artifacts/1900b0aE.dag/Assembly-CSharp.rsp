@@ -368,6 +368,7 @@
 "Assets/Scripts/Follow.cs"
 "Assets/Scripts/Guns/Automat.cs"
 "Assets/Scripts/Guns/Gun.cs"
+"Assets/Scripts/Guns/LootBullets.cs"
 "Assets/Scripts/Guns/Pistol.cs"
 "Assets/Scripts/Guns/PlayerArmory.cs"
 "Assets/Scripts/Head.cs"

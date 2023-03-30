@@ -25,4 +25,10 @@ public class PlayerArmory : MonoBehaviour
                 Guns[i].Deactivate();
         }
     }
+
+
+    public void AddBullets(int gunIndex, int numberOfBullets)
+    {
+        Guns[gunIndex].AddBullets(numberOfBullets);
+    }
 }
