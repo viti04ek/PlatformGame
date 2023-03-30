@@ -367,6 +367,7 @@
 "Assets/Scripts/EventsArray.cs"
 "Assets/Scripts/Follow.cs"
 "Assets/Scripts/Guns/Automat.cs"
+"Assets/Scripts/Guns/ChargeIcon.cs"
 "Assets/Scripts/Guns/Gun.cs"
 "Assets/Scripts/Guns/JumpGun.cs"
 "Assets/Scripts/Guns/LootBullets.cs"
