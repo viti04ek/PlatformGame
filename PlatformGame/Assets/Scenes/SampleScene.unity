@@ -3835,6 +3835,7 @@ MonoBehaviour:
   Hook: {fileID: 1700209630}
   Spawn: {fileID: 1511934297}
   Speed: 15
+  SpringJoint: {fileID: 0}
 --- !u!1 &1199201403
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,6 +5375,7 @@ MonoBehaviour:
   Rigidbody: {fileID: 1700209631}
   Collider: {fileID: 1700209632}
   PlayerCollider: {fileID: 1433210131}
+  RopeGun: {fileID: 1180722571}
 --- !u!54 &1700209631
 Rigidbody:
   m_ObjectHideFlags: 0
