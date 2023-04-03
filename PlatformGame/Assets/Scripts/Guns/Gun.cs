@@ -15,6 +15,8 @@ public class Gun : MonoBehaviour
 
     private float _timer;
 
+    public ParticleSystem ShotEffect;
+
 
     void Update()
     {
@@ -36,10 +38,10 @@ public class Gun : MonoBehaviour
 
         ShotSound.Play();
 
-
         Flash.SetActive(true);
-
         Invoke("HideFlash", 0.12f);
+
+        ShotEffect.Play();
     }
 
 
