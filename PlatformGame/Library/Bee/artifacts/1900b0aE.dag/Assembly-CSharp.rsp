@@ -353,6 +353,8 @@
 "Assets/Hit & Slashes Vol.1/SelfDestruct.cs"
 "Assets/Loot/LootHeal.cs"
 "Assets/Menu/Menu.cs"
+"Assets/Rope/Hook.cs"
+"Assets/Rope/RopeGun.cs"
 "Assets/Scripts/Acorn.cs"
 "Assets/Scripts/ActivateByDistance/ActivateByDistance.cs"
 "Assets/Scripts/ActivateByDistance/Activator.cs"
