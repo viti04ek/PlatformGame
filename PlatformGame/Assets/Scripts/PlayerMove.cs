@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour
 
     public Transform ColliderTransform;
 
+    public Transform BodyTransform;
     public Transform Target;
 
     private int _jumpFrameCounter;
@@ -31,10 +32,10 @@ public class PlayerMove : MonoBehaviour
             ColliderTransform.localScale = Vector3.Lerp(ColliderTransform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 15);
 
 
-        if (Target.position.x > transform.position.x)
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, -45, 0), 0.5f);
-        else
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 45, 0), 0.5f);
+        if (Target.position.x > BodyTransform.position.x && Grounded)
+            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, -45, 0), 0.5f);
+        else if (Target.position.x < BodyTransform.position.x && Grounded)
+            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, 45, 0), 0.5f);
     }
 
 

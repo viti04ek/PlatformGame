@@ -3716,6 +3716,7 @@ MonoBehaviour:
   Grounded: 0
   MaxSpeed: 5
   ColliderTransform: {fileID: 1433210134}
+  BodyTransform: {fileID: 960595874}
   Target: {fileID: 1199201406}
 --- !u!54 &1180722565
 Rigidbody:

@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 66
+  controlID: 67
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 67
+  controlID: 68
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,8 +297,8 @@ MonoBehaviour:
     y: 0
     width: 386
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -429,8 +429,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: 76590000
+      m_LastClickedID: 22902
       m_ExpandedIDs: 32fbffff1259000076590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -713,9 +713,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.6870365, y: 3.0864692, z: 26.675325}
+    m_Target: {x: 34.11283, y: 6.6749754, z: 8.915823}
     speed: 2
-    m_Value: {x: 10.6870365, y: 3.0864692, z: 26.675325}
+    m_Value: {x: 34.11283, y: 6.6749754, z: 8.915823}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -762,9 +762,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.11105847, y: -0.020274736, z: 0.002257589, w: -0.99362314}
+    m_Target: {x: -0.045486182, y: -0.6069043, z: 0.034811836, w: -0.79273164}
     speed: 2
-    m_Value: {x: -0.111056425, y: -0.020274362, z: 0.0022575473, w: -0.9936048}
+    m_Value: {x: -0.045485336, y: -0.60689306, z: 0.034811188, w: -0.7927169}
   m_Size:
     m_Target: 16.860981
     speed: 2
@@ -1106,7 +1106,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 22982
+  m_LastSelectedObjectID: 22902
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
