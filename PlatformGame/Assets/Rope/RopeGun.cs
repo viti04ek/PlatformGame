@@ -25,6 +25,8 @@ public class RopeGun : MonoBehaviour
 
     public RopeState CurrentRopeState;
 
+    public RopeRenderer RopeRenderer;
+
 
     void Update()
     {
@@ -41,6 +43,7 @@ public class RopeGun : MonoBehaviour
             {
                 Hook.gameObject.SetActive(false);
                 CurrentRopeState = RopeState.Disabled;
+                RopeRenderer.Hide();
             }
         }
 
@@ -48,11 +51,18 @@ public class RopeGun : MonoBehaviour
         {
             DestroySpring();
         }
+
+        if (CurrentRopeState == RopeState.Fly || CurrentRopeState == RopeState.Active)
+        {
+            RopeRenderer.Draw(RopeStart.position, Hook.transform.position, _lenght);
+        }
     }
 
 
     void Shot()
     {
+        _lenght = 1;
+
         if (SpringJoint)
             Destroy(SpringJoint);
 
@@ -97,6 +107,7 @@ public class RopeGun : MonoBehaviour
             Destroy(SpringJoint);
             CurrentRopeState = RopeState.Disabled;
             Hook.gameObject.SetActive(false);
+            RopeRenderer.Hide();
         }
     }
 }
