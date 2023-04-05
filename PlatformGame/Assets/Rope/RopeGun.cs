@@ -27,6 +27,8 @@ public class RopeGun : MonoBehaviour
 
     public RopeRenderer RopeRenderer;
 
+    public PlayerMove PlayerMove;
+
 
     void Update()
     {
@@ -49,6 +51,9 @@ public class RopeGun : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (CurrentRopeState == RopeState.Active && !PlayerMove.Grounded)
+                PlayerMove.Jump();
+
             DestroySpring();
         }
 

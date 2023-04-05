@@ -3871,6 +3871,7 @@ MonoBehaviour:
   RopeStart: {fileID: 1159750201}
   CurrentRopeState: 0
   RopeRenderer: {fileID: 1579228405}
+  PlayerMove: {fileID: 1180722564}
 --- !u!1 &1199201403
 GameObject:
   m_ObjectHideFlags: 0

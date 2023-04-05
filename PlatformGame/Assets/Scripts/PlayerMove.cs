@@ -21,7 +21,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && Grounded)
-            Rigidbody.AddForce(0, JumpSpeed, 0, ForceMode.VelocityChange);
+            Jump();
 
 
         if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || !Grounded)
@@ -34,6 +34,12 @@ public class PlayerMove : MonoBehaviour
             BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, -45, 0), 0.5f);
         else
             BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, 45, 0), 0.5f);
+    }
+
+
+    public void Jump()
+    {
+        Rigidbody.AddForce(0, JumpSpeed, 0, ForceMode.VelocityChange);
     }
 
 
