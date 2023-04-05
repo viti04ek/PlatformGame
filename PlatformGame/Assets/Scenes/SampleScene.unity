@@ -3711,12 +3711,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 1180722565}
   MoveSpeed: 2.5
-  JumpSpeed: 14
+  JumpSpeed: 13
   Friction: 0.6
   Grounded: 0
   MaxSpeed: 5
   ColliderTransform: {fileID: 1433210134}
-  BodyTransform: {fileID: 960595874}
   Target: {fileID: 1199201406}
 --- !u!54 &1180722565
 Rigidbody:

@@ -14,8 +14,9 @@ public class PlayerMove : MonoBehaviour
 
     public Transform ColliderTransform;
 
-    public Transform BodyTransform;
     public Transform Target;
+
+    private int _jumpFrameCounter;
 
 
     void Update()
@@ -30,16 +31,18 @@ public class PlayerMove : MonoBehaviour
             ColliderTransform.localScale = Vector3.Lerp(ColliderTransform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 15);
 
 
-        if (Target.position.x > BodyTransform.position.x)
-            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, -45, 0), 0.5f);
+        if (Target.position.x > transform.position.x)
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, -45, 0), 0.5f);
         else
-            BodyTransform.rotation = Quaternion.Lerp(BodyTransform.rotation, Quaternion.Euler(0, 45, 0), 0.5f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 45, 0), 0.5f);
     }
 
 
     public void Jump()
     {
         Rigidbody.AddForce(0, JumpSpeed, 0, ForceMode.VelocityChange);
+
+        _jumpFrameCounter = 0;
     }
 
 
@@ -60,7 +63,18 @@ public class PlayerMove : MonoBehaviour
 
 
         if (Grounded)
+        {
             Rigidbody.AddForce(-Rigidbody.velocity.x * Friction, 0, 0, ForceMode.VelocityChange);
+
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime * 15);
+        }
+
+        _jumpFrameCounter++;
+        if (_jumpFrameCounter == 2)
+        {
+            Rigidbody.freezeRotation = false;
+            Rigidbody.AddRelativeTorque(0f, 0f, 10f, ForceMode.VelocityChange);
+        }
     }
 
 
@@ -69,7 +83,10 @@ public class PlayerMove : MonoBehaviour
         float angle = Vector3.Angle(collision.contacts[0].normal, Vector3.up);
 
         if (angle < 45)
+        {
             Grounded = true;
+            Rigidbody.freezeRotation = true;
+        }
     }
 
     private void OnCollisionExit(Collision collision)
